@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="#f5e36e"><![CDATA[
+    tools:context="com.example.kunalverma.housieapp.WinnerList">
+
+    ]]>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/relativeLayout13"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="WINNERS"
+            android:id="@+id/textView11"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:textColor="#0a0a0a" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayout14"
+        android:background="#29cec0"
+        android:layout_below="@+id/relativeLayout13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/trophy"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ROW 1 WINNER-"
+            android:id="@+id/textView12"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView16"
+            android:layout_alignTop="@+id/textView12"
+            android:layout_toRightOf="@+id/textView12"
+            android:layout_toEndOf="@+id/textView12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/relativeLayout14"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout15"
+        android:background="#29cec0"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/trophy"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ROW 2 WINNER-"
+            android:id="@+id/textView13"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView17"
+            android:layout_alignTop="@+id/textView13"
+            android:layout_toRightOf="@+id/textView13"
+            android:layout_toEndOf="@+id/textView13" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayout16"
+        android:layout_below="@+id/relativeLayout15"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#29cec0"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView4"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/trophy"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ROW 3 WINNER-"
+            android:id="@+id/textView14"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView4"
+            android:layout_toEndOf="@+id/imageView4"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView18"
+            android:layout_alignBottom="@+id/textView14"
+            android:layout_toRightOf="@+id/textView14"
+            android:layout_toEndOf="@+id/textView14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#29cec0"
+        android:layout_below="@+id/relativeLayout16"
+        android:layout_alignLeft="@+id/relativeLayout16"
+        android:layout_alignStart="@+id/relativeLayout16"
+        android:id="@+id/relativeLayout17"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView2"
+            android:background="@drawable/gamewinner"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="HOUSIE WINNER-"
+            android:id="@+id/textView15"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:paddingLeft="15dp"
+            android:paddingRight="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView19"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView15"
+            android:layout_toEndOf="@+id/textView15" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="HOME"
+        android:id="@+id/textView20"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/relativeLayout17"
+        android:layout_alignStart="@+id/relativeLayout17"
+        android:layout_marginBottom="23dp"
+        android:paddingLeft="10dp"
+        android:textColor="#070707"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="RESTART"
+        android:id="@+id/textView21"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_alignRight="@+id/relativeLayout17"
+        android:layout_alignEnd="@+id/relativeLayout17"
+        android:paddingRight="10dp"
+        android:textColor="#070707"
+        android:clickable="true"/>
+</RelativeLayout>

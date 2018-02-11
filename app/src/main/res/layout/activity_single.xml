@@ -1,0 +1,2197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:background="#FFFFFF">
+    tools:context="com.example.kunalverma.housieapp.SingleActivity"
+    style="@style/Base.Theme.AppCompat.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/layoutbackground1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SINGLE PLAYER MODE"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fefcfc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignTop="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#fe000000"
+        android:paddingLeft="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="YOUR TICKET"
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/textView3"
+            android:layout_above="@+id/relativeLayout10"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff758" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="2dp"
+            android:id="@+id/relativeLayout10">
+
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="01"
+                android:id="@+id/textView100"
+                android:textAlignment="center"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="02"
+                android:id="@+id/textView101"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView100"
+                android:layout_toEndOf="@+id/textView100"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="03"
+                android:id="@+id/textView102"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView101"
+                android:layout_toEndOf="@+id/textView101"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="04"
+                android:id="@+id/textView103"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView102"
+                android:layout_toEndOf="@+id/textView102"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="05"
+                android:id="@+id/textView104"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView103"
+                android:layout_toEndOf="@+id/textView103"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="06"
+                android:id="@+id/textView105"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView104"
+                android:layout_toEndOf="@+id/textView104"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="07"
+                android:id="@+id/textView106"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView105"
+                android:layout_toEndOf="@+id/textView105"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="08"
+                android:id="@+id/textView107"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView106"
+                android:layout_toEndOf="@+id/textView106"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="09"
+                android:id="@+id/textView108"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView107"
+                android:layout_toEndOf="@+id/textView107"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="10"
+                android:id="@+id/textView110"
+                android:layout_below="@+id/textView100"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="11"
+                android:id="@+id/textView111"
+                android:layout_below="@+id/textView101"
+                android:layout_toRightOf="@id/textView110"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="12"
+                android:id="@+id/textView112"
+                android:layout_below="@+id/textView102"
+                android:layout_toRightOf="@id/textView111"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="13"
+                android:id="@+id/textView113"
+                android:layout_below="@+id/textView103"
+                android:layout_toRightOf="@id/textView112"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="14"
+                android:id="@+id/textView114"
+                android:layout_below="@+id/textView104"
+                android:layout_toRightOf="@id/textView113"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="15"
+                android:id="@+id/textView115"
+                android:layout_below="@+id/textView105"
+                android:layout_toRightOf="@id/textView114"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="16"
+                android:id="@+id/textView116"
+                android:layout_below="@+id/textView106"
+                android:layout_toRightOf="@id/textView115"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="17"
+                android:id="@+id/textView117"
+                android:layout_below="@+id/textView107"
+                android:layout_toRightOf="@id/textView116"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="18"
+                android:id="@+id/textView118"
+                android:layout_below="@+id/textView108"
+                android:layout_toRightOf="@id/textView117"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="19"
+                android:id="@+id/textView120"
+                android:layout_below="@+id/textView110"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="20"
+                android:id="@+id/textView121"
+                android:layout_below="@+id/textView111"
+                android:layout_toRightOf="@id/textView120"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="21"
+                android:id="@+id/textView122"
+                android:layout_below="@+id/textView112"
+                android:layout_toRightOf="@id/textView121"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="22"
+                android:id="@+id/textView123"
+                android:layout_below="@+id/textView113"
+                android:layout_toRightOf="@id/textView122"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="23"
+                android:id="@+id/textView124"
+                android:layout_below="@+id/textView114"
+                android:layout_toRightOf="@id/textView123"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="24"
+                android:id="@+id/textView125"
+                android:background="@drawable/ticketbackground"
+                android:layout_below="@+id/textView115"
+                android:layout_toLeftOf="@+id/textView116"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:layout_toStartOf="@+id/textView116"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="25"
+                android:id="@+id/textView126"
+                android:layout_below="@+id/textView116"
+                android:layout_toRightOf="@id/textView125"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="26"
+                android:id="@+id/textView127"
+                android:layout_below="@+id/textView117"
+                android:layout_toRightOf="@id/textView126"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="27"
+                android:id="@+id/textView128"
+                android:layout_below="@+id/textView118"
+                android:layout_toRightOf="@id/textView127"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="175dp"
+        android:id="@+id/relativeLayout3"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignLeft="@+id/relativeLayout6"
+        android:layout_alignStart="@+id/relativeLayout6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/relativeLayout6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout12"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="HOUSIE TABLE"
+                android:id="@+id/textView10"
+                android:fontFamily="hans-serif-medium"
+                android:textStyle="bold"
+                android:gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff758" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#000000"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:gravity="top|center"
+            android:layout_below="@+id/relativeLayout12"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="01"
+                android:id="@+id/textViewT01"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="02"
+                android:id="@+id/textViewT02"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textViewT01"
+                android:layout_toEndOf="@+id/textViewT01"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="03"
+                android:id="@+id/textViewT03"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textViewT02"
+                android:layout_toEndOf="@+id/textViewT02"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="04"
+                android:id="@+id/textViewT04"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textViewT03"
+                android:layout_toEndOf="@+id/textViewT03"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="05"
+                android:id="@+id/textViewT05"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textViewT04"
+                android:layout_toEndOf="@+id/textViewT04"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="06"
+                android:id="@+id/textViewT06"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textViewT05"
+                android:layout_toEndOf="@+id/textViewT05"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="07"
+                android:id="@+id/textViewT07"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textViewT06"
+                android:layout_toEndOf="@+id/textViewT06"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="08"
+                android:id="@+id/textViewT08"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textViewT07"
+                android:layout_toEndOf="@+id/textViewT07"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="09"
+                android:id="@+id/textViewT09"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textViewT08"
+                android:layout_toEndOf="@+id/textViewT08"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="10"
+                android:id="@+id/textViewT10"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textViewT09"
+                android:layout_toEndOf="@+id/textViewT09"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="11"
+                android:id="@+id/textViewT11"
+                android:layout_below="@+id/textViewT01"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@+id/textViewT01"
+                android:layout_toEndOf="@+id/textViewT01"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="12"
+                android:id="@+id/textViewT12"
+                android:layout_below="@+id/textViewT02"
+                android:layout_toRightOf="@+id/textViewT11"
+                android:layout_toEndOf="@+id/textViewT11"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="13"
+                android:id="@+id/textViewT13"
+                android:layout_below="@+id/textViewT03"
+                android:layout_toRightOf="@+id/textViewT12"
+                android:layout_toEndOf="@+id/textViewT12"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="14"
+                android:id="@+id/textViewT14"
+                android:layout_below="@+id/textViewT04"
+                android:layout_toRightOf="@+id/textViewT13"
+                android:layout_toEndOf="@+id/textViewT13"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="15"
+                android:id="@+id/textViewT15"
+                android:layout_below="@+id/textViewT04"
+                android:layout_toRightOf="@+id/textViewT14"
+                android:layout_toEndOf="@+id/textViewT14"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="16"
+                android:id="@+id/textViewT16"
+                android:layout_below="@+id/textViewT06"
+                android:layout_toRightOf="@+id/textViewT15"
+                android:layout_toEndOf="@+id/textViewT15"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="17"
+                android:id="@+id/textViewT17"
+                android:layout_below="@+id/textViewT07"
+                android:layout_toRightOf="@+id/textViewT16"
+                android:layout_toEndOf="@+id/textViewT16"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="18"
+                android:id="@+id/textViewT18"
+                android:layout_below="@+id/textViewT08"
+                android:layout_toRightOf="@+id/textViewT17"
+                android:layout_toEndOf="@+id/textViewT17"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="19"
+                android:id="@+id/textViewT19"
+                android:layout_below="@+id/textViewT09"
+                android:layout_toRightOf="@+id/textViewT18"
+                android:layout_toEndOf="@+id/textViewT18"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="20"
+                android:id="@+id/textViewT20"
+                android:layout_below="@+id/textViewT10"
+                android:layout_toRightOf="@+id/textViewT19"
+                android:layout_toEndOf="@+id/textViewT19"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="21"
+                android:id="@+id/textViewT21"
+                android:layout_below="@+id/textViewT11"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@+id/textViewT11"
+                android:layout_toEndOf="@+id/textViewT11"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="22"
+                android:id="@+id/textViewT22"
+                android:layout_below="@+id/textViewT12"
+                android:layout_toRightOf="@+id/textViewT21"
+                android:layout_toEndOf="@+id/textViewT21"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="23"
+                android:id="@+id/textViewT23"
+                android:layout_below="@+id/textViewT13"
+                android:layout_toRightOf="@+id/textViewT22"
+                android:layout_toEndOf="@+id/textViewT22"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="24"
+                android:id="@+id/textViewT24"
+                android:layout_below="@+id/textViewT14"
+                android:layout_toRightOf="@+id/textViewT23"
+                android:layout_toEndOf="@+id/textViewT23"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="25"
+                android:id="@+id/textViewT25"
+                android:layout_below="@+id/textViewT15"
+                android:layout_toRightOf="@+id/textViewT24"
+                android:layout_toEndOf="@+id/textViewT24"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="26"
+                android:id="@+id/textViewT26"
+                android:layout_below="@+id/textViewT16"
+                android:layout_toRightOf="@+id/textViewT25"
+                android:layout_toEndOf="@+id/textViewT25"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="27"
+                android:id="@+id/textViewT27"
+                android:layout_below="@+id/textViewT17"
+                android:layout_toRightOf="@+id/textViewT26"
+                android:layout_toEndOf="@+id/textViewT26"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="28"
+                android:id="@+id/textViewT28"
+                android:layout_below="@+id/textViewT18"
+                android:layout_toRightOf="@+id/textViewT27"
+                android:layout_toEndOf="@+id/textViewT27"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="29"
+                android:id="@+id/textViewT29"
+                android:layout_below="@+id/textViewT19"
+                android:layout_toRightOf="@+id/textViewT28"
+                android:layout_toEndOf="@+id/textViewT28"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="30"
+                android:id="@+id/textViewT30"
+                android:layout_below="@+id/textViewT20"
+                android:layout_toRightOf="@+id/textViewT29"
+                android:layout_toEndOf="@+id/textViewT29"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="31"
+                android:id="@+id/textViewT31"
+                android:layout_below="@+id/textViewT21"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@+id/textViewT01"
+                android:layout_toEndOf="@+id/textViewT01"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="32"
+                android:id="@+id/textViewT32"
+                android:layout_below="@+id/textViewT22"
+                android:layout_toRightOf="@+id/textViewT31"
+                android:layout_toEndOf="@+id/textViewT31"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="33"
+                android:id="@+id/textViewT33"
+                android:layout_below="@+id/textViewT23"
+                android:layout_toRightOf="@+id/textViewT32"
+                android:layout_toEndOf="@+id/textViewT32"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="34"
+                android:id="@+id/textViewT34"
+                android:layout_below="@+id/textViewT24"
+                android:layout_toRightOf="@+id/textViewT33"
+                android:layout_toEndOf="@+id/textViewT33"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="35"
+                android:id="@+id/textViewT35"
+                android:layout_below="@+id/textViewT25"
+                android:layout_toRightOf="@+id/textViewT34"
+                android:layout_toEndOf="@+id/textViewT34"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="36"
+                android:id="@+id/textViewT36"
+                android:layout_below="@+id/textViewT26"
+                android:layout_toRightOf="@+id/textViewT35"
+                android:layout_toEndOf="@+id/textViewT35"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="37"
+                android:id="@+id/textViewT37"
+                android:layout_below="@+id/textViewT27"
+                android:layout_toRightOf="@+id/textViewT36"
+                android:layout_toEndOf="@+id/textViewT36"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="38"
+                android:id="@+id/textViewT38"
+                android:layout_below="@+id/textViewT28"
+                android:layout_toRightOf="@+id/textViewT37"
+                android:layout_toEndOf="@+id/textViewT37"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="39"
+                android:id="@+id/textViewT39"
+                android:layout_below="@+id/textViewT29"
+                android:layout_toRightOf="@+id/textViewT38"
+                android:layout_toEndOf="@+id/textViewT38"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="40"
+                android:id="@+id/textViewT40"
+                android:layout_below="@+id/textViewT30"
+                android:layout_toRightOf="@+id/textViewT39"
+                android:layout_toEndOf="@+id/textViewT39"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="41"
+                android:id="@+id/textViewT41"
+                android:layout_below="@+id/textViewT31"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@+id/textViewT01"
+                android:layout_toEndOf="@+id/textViewT01"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="42"
+                android:id="@+id/textViewT42"
+                android:layout_below="@+id/textViewT32"
+                android:layout_toRightOf="@+id/textViewT11"
+                android:layout_toEndOf="@+id/textViewT11"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="43"
+                android:id="@+id/textViewT43"
+                android:layout_below="@+id/textViewT33"
+                android:layout_toRightOf="@+id/textViewT12"
+                android:layout_toEndOf="@+id/textViewT12"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="44"
+                android:id="@+id/textViewT44"
+                android:layout_below="@+id/textViewT34"
+                android:layout_toRightOf="@+id/textViewT13"
+                android:layout_toEndOf="@+id/textViewT13"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="45"
+                android:id="@+id/textViewT45"
+                android:layout_below="@+id/textViewT35"
+                android:layout_toRightOf="@+id/textViewT14"
+                android:layout_toEndOf="@+id/textViewT14"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="46"
+                android:id="@+id/textViewT46"
+                android:layout_below="@+id/textViewT36"
+                android:layout_toRightOf="@+id/textViewT15"
+                android:layout_toEndOf="@+id/textViewT15"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="47"
+                android:id="@+id/textViewT47"
+                android:layout_below="@+id/textViewT37"
+                android:layout_toRightOf="@+id/textViewT16"
+                android:layout_toEndOf="@+id/textViewT16"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="48"
+                android:id="@+id/textViewT48"
+                android:layout_below="@+id/textViewT38"
+                android:layout_toRightOf="@+id/textViewT17"
+                android:layout_toEndOf="@+id/textViewT17"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="49"
+                android:id="@+id/textViewT49"
+                android:layout_below="@+id/textViewT39"
+                android:layout_toRightOf="@+id/textViewT18"
+                android:layout_toEndOf="@+id/textViewT18"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="50"
+                android:id="@+id/textViewT50"
+                android:layout_below="@+id/textViewT40"
+                android:layout_toRightOf="@+id/textViewT19"
+                android:layout_toEndOf="@+id/textViewT19"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="51"
+                android:id="@+id/textViewT51"
+                android:layout_below="@+id/textViewT41"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@+id/textViewT01"
+                android:layout_toEndOf="@+id/textViewT01"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="52"
+                android:id="@+id/textViewT52"
+                android:layout_below="@+id/textViewT42"
+                android:layout_toRightOf="@+id/textViewT11"
+                android:layout_toEndOf="@+id/textViewT11"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="53"
+                android:id="@+id/textViewT53"
+                android:layout_below="@+id/textViewT43"
+                android:layout_toRightOf="@+id/textViewT12"
+                android:layout_toEndOf="@+id/textViewT12"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="54"
+                android:id="@+id/textViewT54"
+                android:layout_below="@+id/textViewT44"
+                android:layout_toRightOf="@+id/textViewT13"
+                android:layout_toEndOf="@+id/textViewT13"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="55"
+                android:id="@+id/textViewT55"
+                android:layout_below="@+id/textViewT45"
+                android:layout_toRightOf="@+id/textViewT14"
+                android:layout_toEndOf="@+id/textViewT14"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="56"
+                android:id="@+id/textViewT56"
+                android:layout_below="@+id/textViewT46"
+                android:layout_toRightOf="@+id/textViewT15"
+                android:layout_toEndOf="@+id/textViewT15"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="57"
+                android:id="@+id/textViewT57"
+                android:layout_below="@+id/textViewT47"
+                android:layout_toRightOf="@+id/textViewT16"
+                android:layout_toEndOf="@+id/textViewT16"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="58"
+                android:id="@+id/textViewT58"
+                android:layout_below="@+id/textViewT48"
+                android:layout_toRightOf="@+id/textViewT17"
+                android:layout_toEndOf="@+id/textViewT17"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="59"
+                android:id="@+id/textViewT59"
+                android:layout_below="@+id/textViewT49"
+                android:layout_toRightOf="@+id/textViewT18"
+                android:layout_toEndOf="@+id/textViewT18"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="60"
+                android:id="@+id/textViewT60"
+                android:layout_below="@+id/textViewT50"
+                android:layout_toRightOf="@+id/textViewT19"
+                android:layout_toEndOf="@+id/textViewT19"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="61"
+                android:id="@+id/textViewT61"
+                android:layout_below="@+id/textViewT51"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@+id/textViewT01"
+                android:layout_toEndOf="@+id/textViewT01"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="62"
+                android:id="@+id/textViewT62"
+                android:layout_below="@+id/textViewT52"
+                android:layout_toRightOf="@+id/textViewT11"
+                android:layout_toEndOf="@+id/textViewT11"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="63"
+                android:id="@+id/textViewT63"
+                android:layout_below="@+id/textViewT53"
+                android:layout_toRightOf="@+id/textViewT12"
+                android:layout_toEndOf="@+id/textViewT12"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="64"
+                android:id="@+id/textViewT64"
+                android:layout_below="@+id/textViewT54"
+                android:layout_toRightOf="@+id/textViewT13"
+                android:layout_toEndOf="@+id/textViewT13"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="65"
+                android:id="@+id/textViewT65"
+                android:layout_below="@+id/textViewT55"
+                android:layout_toRightOf="@+id/textViewT14"
+                android:layout_toEndOf="@+id/textViewT14"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="66"
+                android:id="@+id/textViewT66"
+                android:layout_below="@+id/textViewT56"
+                android:layout_toRightOf="@+id/textViewT15"
+                android:layout_toEndOf="@+id/textViewT15"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="67"
+                android:id="@+id/textViewT67"
+                android:layout_below="@+id/textViewT57"
+                android:layout_toRightOf="@+id/textViewT16"
+                android:layout_toEndOf="@+id/textViewT16"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="68"
+                android:id="@+id/textViewT68"
+                android:layout_below="@+id/textViewT58"
+                android:layout_toRightOf="@+id/textViewT17"
+                android:layout_toEndOf="@+id/textViewT17"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="69"
+                android:id="@+id/textViewT69"
+                android:layout_below="@+id/textViewT59"
+                android:layout_toRightOf="@+id/textViewT18"
+                android:layout_toEndOf="@+id/textViewT18"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="70"
+                android:id="@+id/textViewT70"
+                android:layout_below="@+id/textViewT60"
+                android:layout_toRightOf="@+id/textViewT19"
+                android:layout_toEndOf="@+id/textViewT19"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="71"
+                android:id="@+id/textViewT71"
+                android:layout_below="@+id/textViewT61"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@+id/textViewT01"
+                android:layout_toEndOf="@+id/textViewT01"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="72"
+                android:id="@+id/textViewT72"
+                android:layout_below="@+id/textViewT62"
+                android:layout_toRightOf="@+id/textViewT11"
+                android:layout_toEndOf="@+id/textViewT11"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="73"
+                android:id="@+id/textViewT73"
+                android:layout_below="@+id/textViewT63"
+                android:layout_toRightOf="@+id/textViewT12"
+                android:layout_toEndOf="@+id/textViewT12"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="74"
+                android:id="@+id/textViewT74"
+                android:layout_below="@+id/textViewT64"
+                android:layout_toRightOf="@+id/textViewT13"
+                android:layout_toEndOf="@+id/textViewT13"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="75"
+                android:id="@+id/textViewT75"
+                android:layout_below="@+id/textViewT65"
+                android:layout_toRightOf="@+id/textViewT14"
+                android:layout_toEndOf="@+id/textViewT14"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="76"
+                android:id="@+id/textViewT76"
+                android:layout_below="@+id/textViewT66"
+                android:layout_toRightOf="@+id/textViewT15"
+                android:layout_toEndOf="@+id/textViewT15"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="77"
+                android:id="@+id/textViewT77"
+                android:layout_below="@+id/textViewT67"
+                android:layout_toRightOf="@+id/textViewT16"
+                android:layout_toEndOf="@+id/textViewT16"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="78"
+                android:id="@+id/textViewT78"
+                android:layout_below="@+id/textViewT68"
+                android:layout_toRightOf="@+id/textViewT17"
+                android:layout_toEndOf="@+id/textViewT17"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="79"
+                android:id="@+id/textViewT79"
+                android:layout_below="@+id/textViewT69"
+                android:layout_toRightOf="@+id/textViewT18"
+                android:layout_toEndOf="@+id/textViewT18"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="80"
+                android:id="@+id/textViewT80"
+                android:layout_below="@+id/textViewT70"
+                android:layout_toRightOf="@+id/textViewT19"
+                android:layout_toEndOf="@+id/textViewT19"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="81"
+                android:id="@+id/textViewT81"
+                android:layout_below="@+id/textViewT71"
+                android:layout_alignParentLeft="true"
+                android:layout_toRightOf="@+id/textViewT01"
+                android:layout_toEndOf="@+id/textViewT01"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="82"
+                android:id="@+id/textViewT82"
+                android:layout_below="@+id/textViewT72"
+                android:layout_toRightOf="@+id/textViewT11"
+                android:layout_toEndOf="@+id/textViewT11"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="83"
+                android:id="@+id/textViewT83"
+                android:layout_below="@+id/textViewT73"
+                android:layout_toRightOf="@+id/textViewT12"
+                android:layout_toEndOf="@+id/textViewT12"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="84"
+                android:id="@+id/textViewT84"
+                android:layout_below="@+id/textViewT74"
+                android:layout_toRightOf="@+id/textViewT13"
+                android:layout_toEndOf="@+id/textViewT13"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="85"
+                android:id="@+id/textViewT85"
+                android:layout_below="@+id/textViewT75"
+                android:layout_toRightOf="@+id/textViewT14"
+                android:layout_toEndOf="@+id/textViewT14"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="86"
+                android:id="@+id/textViewT86"
+                android:layout_below="@+id/textViewT76"
+                android:layout_toRightOf="@+id/textViewT15"
+                android:layout_toEndOf="@+id/textViewT15"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="87"
+                android:id="@+id/textViewT87"
+                android:layout_below="@+id/textViewT77"
+                android:layout_toRightOf="@+id/textViewT16"
+                android:layout_toEndOf="@+id/textViewT16"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="88"
+                android:id="@+id/textViewT88"
+                android:layout_below="@+id/textViewT78"
+                android:layout_toRightOf="@+id/textViewT17"
+                android:layout_toEndOf="@+id/textViewT17"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="89"
+                android:id="@+id/textViewT89"
+                android:layout_below="@+id/textViewT79"
+                android:layout_toRightOf="@+id/textViewT18"
+                android:layout_toEndOf="@+id/textViewT18"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:text="90"
+                android:id="@+id/textViewT90"
+                android:layout_below="@+id/textViewT80"
+                android:layout_toRightOf="@+id/textViewT19"
+                android:layout_toEndOf="@+id/textViewT19"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:background="@drawable/tablebackground1"
+                android:textAlignment="center"/>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayout4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/layoutbackground1">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageButton"
+            android:background="@drawable/exit"
+            android:layout_marginRight="31dp"
+            android:layout_marginEnd="31dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton2"
+            android:background="@drawable/previousbutton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageButton3"
+            android:background="@drawable/nextbutton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:id="@+id/relativeLayout5"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#000000"
+        android:paddingLeft="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ANDROID&apos;S TICKET"
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/textView4"
+            android:layout_above="@+id/relativeLayout9"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:textColor="#fff758" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="2dp"
+            android:id="@+id/relativeLayout9">
+
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="01"
+                android:id="@+id/textView200"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/ticketbackground"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="02"
+                android:id="@+id/textView201"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView200"
+                android:layout_toEndOf="@+id/textView200"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="03"
+                android:id="@+id/textView202"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView201"
+                android:layout_toEndOf="@+id/textView201"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="04"
+                android:id="@+id/textView203"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView202"
+                android:layout_toEndOf="@+id/textView202"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="05"
+                android:id="@+id/textView204"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView203"
+                android:layout_toEndOf="@+id/textView203"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="06"
+                android:id="@+id/textView205"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView204"
+                android:layout_toEndOf="@+id/textView204"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="07"
+                android:id="@+id/textView206"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView205"
+                android:layout_toEndOf="@+id/textView205"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="08"
+                android:id="@+id/textView207"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView206"
+                android:layout_toEndOf="@+id/textView206"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="09"
+                android:id="@+id/textView208"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/textView207"
+                android:layout_toEndOf="@+id/textView207"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="10"
+                android:id="@+id/textView210"
+                android:layout_below="@+id/textView200"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="11"
+                android:id="@+id/textView211"
+                android:layout_below="@+id/textView201"
+                android:layout_toRightOf="@id/textView210"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="12"
+                android:id="@+id/textView212"
+                android:layout_below="@+id/textView202"
+                android:layout_toRightOf="@id/textView211"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="13"
+                android:id="@+id/textView213"
+                android:layout_below="@+id/textView203"
+                android:layout_toRightOf="@id/textView212"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="14"
+                android:id="@+id/textView214"
+                android:layout_below="@+id/textView204"
+                android:layout_toRightOf="@id/textView213"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="15"
+                android:id="@+id/textView215"
+                android:layout_below="@+id/textView205"
+                android:layout_toRightOf="@id/textView214"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="16"
+                android:id="@+id/textView216"
+                android:layout_below="@+id/textView206"
+                android:layout_toRightOf="@id/textView215"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="17"
+                android:id="@+id/textView217"
+                android:layout_below="@+id/textView207"
+                android:layout_toRightOf="@id/textView216"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="18"
+                android:id="@+id/textView218"
+                android:layout_below="@+id/textView208"
+                android:layout_toRightOf="@id/textView217"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="19"
+                android:id="@+id/textView220"
+                android:layout_below="@+id/textView210"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="20"
+                android:id="@+id/textView221"
+                android:layout_below="@+id/textView211"
+                android:layout_toRightOf="@id/textView220"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="21"
+                android:id="@+id/textView222"
+                android:layout_below="@+id/textView212"
+                android:layout_toRightOf="@id/textView221"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="22"
+                android:id="@+id/textView223"
+                android:layout_below="@+id/textView213"
+                android:layout_toRightOf="@id/textView222"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="23"
+                android:id="@+id/textView224"
+                android:layout_below="@+id/textView214"
+                android:layout_toRightOf="@id/textView223"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="24"
+                android:id="@+id/textView225"
+                android:layout_below="@+id/textView215"
+                android:layout_toRightOf="@id/textView224"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="25"
+                android:id="@+id/textView226"
+                android:layout_below="@+id/textView216"
+                android:layout_toRightOf="@id/textView225"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="26"
+                android:id="@+id/textView227"
+                android:layout_below="@+id/textView217"
+                android:layout_toRightOf="@id/textView226"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="19dp"
+                android:layout_height="25dp"
+                android:text="27"
+                android:id="@+id/textView228"
+                android:layout_below="@+id/textView218"
+                android:layout_toRightOf="@id/textView227"
+                android:textAlignment="center"
+                android:textColor="#4c0000"
+                android:background="@drawable/ticketbackground"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:id="@+id/relativeLayout6"
+        android:layout_toRightOf="@+id/relativeLayout5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/relativeLayout4"
+        android:background="#000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="WINNERS"
+            android:id="@+id/textView5"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:layout_above="@+id/relativeLayout7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff758" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relativeLayout7"
+            android:layout_above="@+id/relativeLayout8"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/TVWinnerRow1"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff758" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Row 1 Winner"
+                android:id="@+id/WinnerRow1"
+                android:textStyle="italic|bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff758" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relativeLayout8"
+            android:layout_above="@+id/relativeLayout11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic|bold"
+                android:text="Row 2 Winner"
+                android:id="@+id/WinnerRow2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff758" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/TVWinnerRow2"
+                android:layout_below="@+id/WinnerRow2"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff758" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout11">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic|bold"
+                android:text="Row 3 Winner"
+                android:id="@+id/WinnerRow3"
+                android:layout_above="@+id/TVWinnerRow3"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff758"
+                android:textColorHighlight="#ed0f0f" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/TVWinnerRow3"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff758" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_toLeftOf="@+id/relativeLayout6"
+        android:layout_toStartOf="@+id/relativeLayout6"
+        android:layout_alignBottom="@+id/relativeLayout6"
+        android:textAlignment="center"
+        android:background="#000000"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Current No:-"
+            android:id="@+id/textView6"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#fff758" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="     "
+            android:id="@+id/textView7"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="00"
+            android:id="@+id/textView8"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView7"
+            android:layout_toEndOf="@+id/textView7"
+            android:textColor="#fff758" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
