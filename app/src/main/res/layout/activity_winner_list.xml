@@ -34,7 +34,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
         android:id="@+id/relativeLayout14"
         android:background="#29cec0"
         android:layout_below="@+id/relativeLayout13"
@@ -62,7 +62,8 @@
             android:layout_toRightOf="@+id/imageView"
             android:layout_toEndOf="@+id/imageView"
             android:paddingLeft="20dp"
-            android:paddingRight="5dp" />
+            android:paddingRight="5dp"
+            android:textColor="#8d1010" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -72,12 +73,14 @@
             android:id="@+id/textView16"
             android:layout_alignTop="@+id/textView12"
             android:layout_toRightOf="@+id/textView12"
-            android:layout_toEndOf="@+id/textView12" />
+            android:layout_toEndOf="@+id/textView12"
+            android:textColor="#8d1010"
+            android:paddingLeft="10dp" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
         android:layout_below="@+id/relativeLayout14"
         android:layout_centerHorizontal="true"
         android:id="@+id/relativeLayout15"
@@ -104,7 +107,8 @@
             android:layout_toRightOf="@+id/imageView3"
             android:layout_toEndOf="@+id/imageView3"
             android:paddingLeft="20dp"
-            android:paddingRight="5dp" />
+            android:paddingRight="5dp"
+            android:textColor="#8d1010" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -114,12 +118,14 @@
             android:id="@+id/textView17"
             android:layout_alignTop="@+id/textView13"
             android:layout_toRightOf="@+id/textView13"
-            android:layout_toEndOf="@+id/textView13" />
+            android:layout_toEndOf="@+id/textView13"
+            android:textColor="#8d1010"
+            android:paddingLeft="10dp" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
         android:id="@+id/relativeLayout16"
         android:layout_below="@+id/relativeLayout15"
         android:layout_alignParentRight="true"
@@ -146,7 +152,8 @@
             android:layout_toRightOf="@+id/imageView4"
             android:layout_toEndOf="@+id/imageView4"
             android:paddingLeft="20dp"
-            android:paddingRight="5dp" />
+            android:paddingRight="5dp"
+            android:textColor="#8d1010" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -156,7 +163,9 @@
             android:id="@+id/textView18"
             android:layout_alignBottom="@+id/textView14"
             android:layout_toRightOf="@+id/textView14"
-            android:layout_toEndOf="@+id/textView14" />
+            android:layout_toEndOf="@+id/textView14"
+            android:textColor="#8d1010"
+            android:paddingLeft="10dp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -188,7 +197,8 @@
             android:layout_toRightOf="@+id/imageView2"
             android:layout_toEndOf="@+id/imageView2"
             android:paddingLeft="15dp"
-            android:paddingRight="2dp" />
+            android:paddingRight="2dp"
+            android:textColor="#8d1010" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -198,33 +208,45 @@
             android:id="@+id/textView19"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/textView15"
-            android:layout_toEndOf="@+id/textView15" />
+            android:layout_toEndOf="@+id/textView15"
+            android:textColor="#8d1010"
+            android:paddingLeft="5dp" />
     </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="HOME"
-        android:id="@+id/textView20"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/relativeLayout17"
-        android:layout_alignStart="@+id/relativeLayout17"
-        android:layout_marginBottom="23dp"
-        android:paddingLeft="10dp"
-        android:textColor="#070707"
-        android:clickable="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout17"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="RESTART"
-        android:id="@+id/textView21"
-        android:layout_alignTop="@+id/textView20"
-        android:layout_alignRight="@+id/relativeLayout17"
-        android:layout_alignEnd="@+id/relativeLayout17"
-        android:paddingRight="10dp"
-        android:textColor="#070707"
-        android:clickable="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="RESTART"
+            android:id="@+id/textView21"
+            android:paddingRight="10dp"
+            android:textColor="#070707"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:layout_alignTop="@+id/textView20"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center|right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="HOME"
+            android:id="@+id/textView20"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="23dp"
+            android:paddingLeft="10dp"
+            android:textColor="#070707"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:gravity="left|center" />
+    </RelativeLayout>
 </RelativeLayout>

@@ -13,8 +13,20 @@ public class WinnerList extends AppCompatActivity {
     String r1,r2,r3,hw;
 
     @Override
+    public void onBackPressed() {
+        finishAndRemoveTask();
+
+        Intent i=new Intent(WinnerList.this,MainActivityHousie.class);
+        startActivity(i);
+
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        View dv=getWindow().getDecorView();
+        int ui=View.SYSTEM_UI_FLAG_HIDE_NAVIGATION|View.SYSTEM_UI_FLAG_FULLSCREEN|View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY|View.SYSTEM_UI_FLAG_LAYOUT_STABLE|View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION|View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
+        dv.setSystemUiVisibility(ui);
         setContentView(R.layout.activity_winner_list);
 
         r1=getIntent().getStringExtra("displaywinnerr1");
@@ -62,8 +74,8 @@ public class WinnerList extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent ob = new Intent(WinnerList.this, MainActivityHousie.class);
-                finish();
                 startActivity(ob);
+                finish();
 
             }
 
@@ -71,8 +83,8 @@ public class WinnerList extends AppCompatActivity {
         restart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                finishAndRemoveTask();
                 Intent ob= new Intent(WinnerList.this,SingleActivity.class);
-                finish();
                 startActivity(ob);
 
             }

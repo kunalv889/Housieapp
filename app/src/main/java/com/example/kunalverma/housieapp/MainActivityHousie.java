@@ -13,6 +13,9 @@ public class MainActivityHousie extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         finish();
+        moveTaskToBack(true);
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);
     }
 
     @Override
@@ -34,6 +37,16 @@ public class MainActivityHousie extends AppCompatActivity {
             public void onClick(View v) {
                 Intent ob=new Intent(MainActivityHousie.this,SingleActivity.class);
                 startActivity(ob);
+                finish();
+            }
+        });
+
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(MainActivityHousie.this,HousieBoard.class);
+                startActivity(i);
+                finish();
             }
         });
 

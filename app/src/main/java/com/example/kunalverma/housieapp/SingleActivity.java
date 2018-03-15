@@ -14,8 +14,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.PopupMenu;
+import android.widget.Switch;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,6 +26,8 @@ import android.widget.Toast;
 import java.util.Locale;
 import java.util.Random;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 public class SingleActivity extends AppCompatActivity {
 
@@ -30,20 +35,21 @@ public class SingleActivity extends AppCompatActivity {
     TextView Ticket1[][]=new TextView[3][9];
     TextView Ticket2[][]=new TextView[3][9];
     TextView Htable[][]=new TextView[10][10];
-    TextView tv1,tv2,tv3,tv4,tv5,tv6,tv7,tv8,tv9,tv10;
+    TextView tv1,tv2,tv3,tv4,tv5,tv6,tv7,tv8,tv9,tv10,tv11,tv12,tv30,tv31;
     TextView winner1,winner2,winner3,prevcoin;
     String winr1,winr2,winr3,hwin;
-    ImageButton quitbutton;
-    ImageButton b5,b6;
-    Button ok,cancel;
+    Switch s1;
+    ImageButton b5,b6,options;
+    Button ok,cancel,diabutok;
     TextToSpeech tts;
-    boolean isb6clickable=true;
+
 
     int i,j,k=0,t,p=0,temp=0,temp01,temp02,temp03,temp1,r,n,fin=0;
     int row1A = 0, row2A = 0, row3A = 0, row1B = 0, row2B = 0, row3B = 0,hot=0;
     int [][][]b=new int[2][3][10];
     int [][]a=new int[2][15];
     int []Ht=new int [90];
+    boolean isb6clickable=true;
     Random ran=new Random();
     Random Tran=new Random();
 
@@ -60,6 +66,22 @@ public class SingleActivity extends AppCompatActivity {
         quitactivityy();
     }
 
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            View decorView= getWindow().getDecorView();
+            decorView.setSystemUiVisibility(
+                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,8 +96,16 @@ public class SingleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_single);
         dialog = new Dialog(SingleActivity.this);
         dialog.setContentView(R.layout.dialog_layout);
+        dialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
+
        dia=new Dialog(SingleActivity.this);
         dia.setContentView(R.layout.previouscoin_layout);
+        dia.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
+
+
+
+
+
 
         Typeface ourfont=Typeface.createFromAsset(getAssets(), "PrimeLight.otf");                       //SETTING FONTS START
         Typeface dig=Typeface.createFromAsset(getAssets(),"digital.ttf");
@@ -136,6 +166,7 @@ public class SingleActivity extends AppCompatActivity {
         });
          b5 = (ImageButton)findViewById(R.id.imageButton2);
         b6=(ImageButton)findViewById(R.id.imageButton3);
+        options=(ImageButton)findViewById(R.id.menu_options);
          tv1=(TextView)findViewById(R.id.TVWinnerRow1);
          tv2=(TextView)findViewById(R.id.TVWinnerRow2);
          tv3=(TextView)findViewById(R.id.TVWinnerRow3);
@@ -149,12 +180,18 @@ public class SingleActivity extends AppCompatActivity {
         winner2=(TextView)findViewById(R.id.WinnerRow2);
         winner3=(TextView)findViewById(R.id.WinnerRow3);
         tv9=(TextView)findViewById(R.id.textView5);
-        quitbutton=(ImageButton)findViewById(R.id.imageButton);
+        tv31=(TextView)findViewById(R.id.textView31);
         ok=(Button)dialog.findViewById(R.id.dialog_ok);
         cancel=(Button)dialog.findViewById(R.id.dialog_cancel);
         prevcoin=(TextView)dia.findViewById(R.id.textView9);
+        tv11=(TextView)dia.findViewById(R.id.textView23);
+        diabutok=(Button)dia.findViewById(R.id.button5);
+        tv12=(TextView)dialog.findViewById(R.id.textView22);
+        tv30=(TextView)findViewById(R.id.textView30);
+        s1=(Switch)findViewById(R.id.switch3);
 
         tv4.setTypeface(ourfont);
+       tv30.setTypeface(ourfont);
         tv5.setTypeface(sup);
         tv6.setTypeface(sup);
         tv7.setTypeface(sup);
@@ -163,16 +200,22 @@ public class SingleActivity extends AppCompatActivity {
         tv3.setTypeface(good);
         tv2.setTypeface(good);
         tv1.setTypeface(good);
+        tv31.setTypeface(sup);
         winner1.setTypeface(good);
         winner2.setTypeface(good);
         winner3.setTypeface(good);
         tv9.setTypeface(sup);
         prevcoin.setTypeface(good);
+        tv11.setTypeface(good);
+        tv12.setTypeface(good);
+
 
 
 
 
                                                                                                        //FONT SETTING ENDS
+
+
 
         iniTicket(0);                                                                                //FUNCTIONS CALLED
         genTicket(0);
@@ -180,12 +223,12 @@ public class SingleActivity extends AppCompatActivity {
         iniTicket(1);
         genTicket(1);
         printTicket(1);
+        Options_Menu();
         HTable();
         prevCoin(0);
         quitactivity();
 
 
-            if (isb6clickable==true) {
                 b6.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -197,7 +240,8 @@ public class SingleActivity extends AppCompatActivity {
                                 stoptextview();
                                 tv8.setText(Integer.toString(Ht[hot]));
                                 System.out.println(hot);
-                                WinnerGenerator(hot);
+                                if (isb6clickable==true)
+                                    WinnerGenerator(hot);
                                 prevCoin(hot);
                                 hot = hot + 1;
                             }
@@ -207,8 +251,67 @@ public class SingleActivity extends AppCompatActivity {
                     }
                 });
 
-            }
     }                                                                                                   //ONCREATE ENDS
+
+void Options_Menu(){
+
+
+    options.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            PopupMenu popupMenu=new PopupMenu(SingleActivity.this,options);
+            popupMenu.getMenuInflater().inflate(R.menu.menu_main, popupMenu.getMenu());
+            //popupMenu.getWindow().setFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE, WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE);
+
+            popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+
+                    if (item.getItemId() == R.id.item1) {
+
+                        if (hot == 0) {
+
+                            for (i = 0; i < 3; i++) {
+                                for (j = 0; j < 9; j++) {
+                                    int temp;
+                                    temp = b[0][i][j];
+                                    b[0][i][j] = b[1][i][j];
+                                    b[1][i][j] = temp;
+                                }
+                            }
+                            printTicket(0);
+                            printTicket(1);
+
+                        } else
+                            Toast.makeText(SingleActivity.this, "exchange not availabe", Toast.LENGTH_SHORT).show();
+                        return true;
+                    } else if (item.getItemId() == R.id.item2) {
+                        if (hot == 0) {
+                            iniTicket(0);                                                                                //FUNCTIONS CALLED
+                            genTicket(0);
+                            printTicket(0);
+                            iniTicket(1);
+                            genTicket(1);
+                            printTicket(1);
+                        } else {
+                                  Intent i=new Intent(SingleActivity.this,SingleActivity.class);
+                            startActivity(i);
+                            finish();
+                            //Toast.makeText(SingleActivity.this, "restart the game", Toast.LENGTH_SHORT).show();
+                        }
+                        return true;
+                    } else if (item.getItemId() == R.id.item3) {
+                        Toast.makeText(SingleActivity.this, "item3", Toast.LENGTH_SHORT).show();
+                        return true;
+                    }
+                    return true;
+                }
+            });
+            popupMenu.show();
+        }
+    });
+}
+
 
 
     void iniTicket(int n)
@@ -231,14 +334,23 @@ public class SingleActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(rap==0)
                 {
-                    prevcoin.setText("NO PREVOIUS COIN");
+                    prevcoin.setText("Null");
                     dia.show();
                 }
                 else if (rap >= 1) {
                     try {
+                        if(Ht[rap-1]>9) {
 
-                        prevcoin.setText(Integer.toString(Ht[rap-1]));
-                        dia.show();
+                            prevcoin.setText(Integer.toString(Ht[rap - 1]));
+                           // System.out.println(Ht[rap-1]);
+                            dia.show();
+                        }
+                        else if (Ht[rap-1]<10) {
+                            String temp=Integer.toString(Ht[rap-1]);
+                            prevcoin.setText("0" + temp);
+                            //System.out.println(temp);
+                            dia.show();
+                        }
                     } catch (Exception e) {
                         Toast.makeText(SingleActivity.this, "exception", Toast.LENGTH_SHORT).show();
                     }
@@ -247,13 +359,19 @@ public class SingleActivity extends AppCompatActivity {
             }
 
         });
+        diabutok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dia.hide();
+            }
+        });
     }
 
 
 
     void quitactivity(){
       //  window.setGravity(Gravity.TOP);
-        quitbutton.setOnClickListener(new View.OnClickListener() {
+        tv30.setOnClickListener(new View.OnClickListener() {
 
 
             @Override
@@ -261,18 +379,23 @@ public class SingleActivity extends AppCompatActivity {
 
 
                 dialog.show();
+
                 ok.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        Intent i = new Intent(SingleActivity.this, MainActivityHousie.class);
+                        startActivity(i);
                         //   Toast.makeText(SingleActivity.this, "ok pressed", Toast.LENGTH_SHORT).show();
                         finish();
+                        dialog.dismiss();
                     }
                 });
                 cancel.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         // Toast.makeText(SingleActivity.this, "cancel pressed", Toast.LENGTH_SHORT).show();
-                        dialog.hide();
+                       // dialog.hide();
+                        dialog.dismiss();
                     }
                 });
 
@@ -289,8 +412,9 @@ public class SingleActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //   Toast.makeText(SingleActivity.this, "ok pressed", Toast.LENGTH_SHORT).show();
                 Intent ob=new Intent(SingleActivity.this,MainActivityHousie.class);
-                finish();
                 startActivity(ob);
+                finish();
+
             }
         });
         cancel.setOnClickListener(new View.OnClickListener() {
@@ -461,21 +585,29 @@ public class SingleActivity extends AppCompatActivity {
 
     void printTicket(int n)
     {
+        Animation animation=AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
+
         if (n==0) {
             for (i = 0; i < 3; i++)                       //  PRINTING OF TICKET 1
             {
                 for (j = 0; j < 9; j++) {
+                    Ticket1[i][j].startAnimation(animation);
                     temp = b[n][i][j];
                     if (temp == 0) {
                         System.out.print("0" + b[n][i][j] + " ");
                         Ticket1[i][j].setText(" ");
+
                     } else {
                         System.out.print(b[n][i][j] + " ");
                         try {
-                            if (b[n][i][j] / 10 > 0)
+                            if (b[n][i][j] / 10 > 0) {
                                 Ticket1[i][j].setText("" + b[n][i][j]);
-                            else
+
+                            }
+                            else {
                                 Ticket1[i][j].setText("0" + b[n][i][j]);
+
+                            }
                         } catch (Exception ArrayIndexOutOfBondException) {
                         }
                     }
@@ -488,17 +620,22 @@ public class SingleActivity extends AppCompatActivity {
             for(i=0;i<3;i++)                       //  PRINTING OF TICKET 1
             {
                 for (j = 0; j < 9; j++) {
-                    temp = b[n][i][j];
+                    Ticket2[i][j].startAnimation(animation);temp = b[n][i][j];
+
                     if (temp == 0) {
                         System.out.print("0" + b[n][i][j] + " ");
                         Ticket2[i][j].setText(" ");
                     } else {
                         System.out.print(b[n][i][j] + " ");
                         try {
-                            if(b[n][i][j]/10>0)
-                                Ticket2[i][j].setText(""+b[n][i][j]);
-                            else
-                                Ticket2[i][j].setText("0"+b[n][i][j]);
+                            if(b[n][i][j]/10>0) {
+                                Ticket2[i][j].setText("" + b[n][i][j]);
+
+                            }
+                            else {
+                                Ticket2[i][j].setText("0" + b[n][i][j]);
+
+                            }
                         } catch (Exception ArrayIndexOutOfBondException) {
                         }
                     }
@@ -552,9 +689,10 @@ public class SingleActivity extends AppCompatActivity {
 
 
         System.out.println("outer loop");
-        String text= new Integer(Ht[i]).toString();
-       // tts.speak(text,TextToSpeech.QUEUE_FLUSH,null);
-
+        if(s1.isChecked()) {
+            String text = new Integer(Ht[i]).toString();
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+        }
               try {
 
                     int y,u;
@@ -570,7 +708,8 @@ public class SingleActivity extends AppCompatActivity {
                                   for (k = 0; k < 9; k++) {
                                       if (Ht[i] == b[0][j][k]) {
 
-                                          Ticket1[j][k].setBackground(getResources().getDrawable(R.drawable.capture3));
+                                          //Ticket1[j][k].setBackground(getResources().getDrawable(R.drawable.capture3));
+                                          Ticket1[j][k].setForeground(getResources().getDrawable(R.drawable.checked));
                                           if (j == 0)
                                               row1A = row1A + 1;
                                           else if (j == 1)
@@ -584,7 +723,8 @@ public class SingleActivity extends AppCompatActivity {
                               for (j = 0; j < 3; j++) {
                                   for (k = 0; k < 9; k++) {
                                       if (Ht[i] == b[1][j][k]) {
-                                          Ticket2[j][k].setBackground(getResources().getDrawable(R.drawable.capture3));
+                                          //Ticket2[j][k].setBackground(getResources().getDrawable(R.drawable.capture3));
+                                          Ticket2[j][k].setForeground(getResources().getDrawable(R.drawable.checked));
                                           if (j == 0)
                                               row1B = row1B + 1;
                                           else if (j == 1)
@@ -674,12 +814,13 @@ public class SingleActivity extends AppCompatActivity {
                                     hwin=winr3;
                                 }
                                 Intent ob=new Intent(SingleActivity.this,WinnerList.class);
-                                finish();
                                 ob.putExtra("displaywinnerr1", winr1);
                                 ob.putExtra("displaywinnerr2", winr2);
                                 ob.putExtra("displaywinnerr3", winr3);
                                 ob.putExtra("displayhwinner",hwin);
                                 startActivity(ob);
+                                finish();
+
                             }
 
 
@@ -721,6 +862,17 @@ public class SingleActivity extends AppCompatActivity {
     public void stoptextview(){
         handler.removeCallbacks(ute);
         istextviewstarted=false;
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        View dv = getWindow().getDecorView();
+
+        int ui = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
+
+        dv.setSystemUiVisibility(ui);
     }
 
 

@@ -10,8 +10,8 @@
                 android:top="0dp"></padding>
 
             <stroke android:width="3dp"
-                android:color="#f2f2fd"></stroke>
-            <solid android:color="#4c4e4e"></solid>
+                android:color="#ffffff"></stroke>
+            <solid android:color="#2f111b"></solid>
         </shape>
         >
 

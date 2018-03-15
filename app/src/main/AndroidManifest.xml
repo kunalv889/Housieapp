@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SingleActivity" />
-        <activity android:name=".WinnerList"></activity>
+        <activity android:name=".WinnerList" />
+        <activity android:name=".HousieBoard"></activity>
     </application>
 
 </manifest>
